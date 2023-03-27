@@ -1,0 +1,61 @@
+.SideBar_contaner, .SideBar_top, .SideBar_bottom, .SideBar_middle, li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.SideBar_contaner {
+    flex: 1 ;
+    height: 100vh;
+}
+
+.SideBar_top {
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    font-size:x-large;
+    flex-direction: row;
+}
+
+.SideBar_top img {
+    height: 2rem;
+    padding-right: 1rem;
+}
+
+.SideBar_bottom {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.SideBar_middle  {
+    width: 100%;
+}
+
+.SideBar_middle li {
+    list-style: none;
+    margin: 0.6rem 0;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 35px; 
+    box-shadow: 35px 35px 68px 0px rgba(217, 92, 243, 0.5), 
+                inset -6px -6px 16px 0px rgba(217, 92, 243, 0.6), 
+                inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.SideBar_middle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.SideBar_middle a:hover {
+    color: #c300ff;
+}

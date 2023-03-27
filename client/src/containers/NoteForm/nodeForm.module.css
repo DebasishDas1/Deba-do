@@ -1,0 +1,50 @@
+.selector_contaner, .selector_option_contaner, .selector_option, .form_submit_button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_contaner {
+    width: 90%;
+}
+
+.form_contaner input{
+    border: 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    outline: none;
+     border-bottom: 4px solid white ;
+}
+
+.form_contaner input:focus{
+    width: 100%;
+    border-bottom: 4px solid #e3a6f0 ;
+}
+
+.form_contaner textarea{
+    width: 95%;
+    height: 12rem;
+    border: 0;
+    padding: 20px;
+    margin: 1rem 0;
+    border-radius: 15px;
+    outline: none;
+    font-weight: bolder;
+    background: #eadcee;
+}
+
+.form_submit_button {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    background: #bf56fc;
+}
+
+.form_submit_button:active {
+    color: white;
+    background: black;
+}

@@ -1,0 +1,55 @@
+.dashboard_contaner, .dashboard_item_contaner, .dashboard_note_title, .dashboard_note_body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.dashboard_contaner {
+    margin: 0 2rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.dashboard_title {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.dashboard_item_contaner {
+    background: #eadcee;
+    width: 85%;
+    padding: 2rem;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    gap: 1rem;
+}
+
+.dashboard_note {
+    background: white; 
+    border-radius: 20px; 
+    box-shadow: 35px 35px 68px 0px rgba(217, 92, 243, 0.5), 
+                inset -6px -6px 16px 0px rgba(217, 92, 243, 0.6), 
+                inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.dashboard_note_title {
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+.dashboard_note_body {
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.dashboard_note_count {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: blueviolet;
+    font-weight: bolder;
+}
