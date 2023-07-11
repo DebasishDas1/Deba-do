@@ -1,0 +1,39 @@
+.reminderForm,
+.reminderEntry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminderForm {
+    background: #eadcee;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.reminderForm button {
+    background: black;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.reminderList {
+    width: 60%;
+}
+
+.reminderEntry {
+    justify-content: space-between;
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: solid 1px black;
+    rotate: -1deg;
+}
+
+.reminderEntry_delete:hover {
+    color: red;
+}

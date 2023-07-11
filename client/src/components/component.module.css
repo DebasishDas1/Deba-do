@@ -1,6 +1,10 @@
-.note, .note_footer, .selector_contaner, .selector_option_contaner, 
-.selector_option, .form_submit_button, .selector_option_selected
-{
+.note,
+.note_footer,
+.selector_contaner,
+.selector_option_contaner,
+.selector_option,
+.form_submit_button,
+.selector_option_selected {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +13,7 @@
 .note {
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 1rem ;
+    padding: 5px 1rem;
     border-radius: 20px;
     border: solid 1px black;
 }
@@ -31,7 +35,7 @@
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 16rem;
-	/* grid-template-columns: repeat(
+    /* grid-template-columns: repeat(
 		auto-fill,
 		minmax(16rem, 1fr)
 	); */
@@ -48,14 +52,14 @@
 
 .selector_option_contaner {
     flex: 1;
-    justify-content:space-around;
-    font-size:medium;
-    font-weight:400;
+    justify-content: space-around;
+    font-size: medium;
+    font-weight: 400;
     padding-left: 10%;
 }
 
-.selector_option, .selector_option_selected 
-{
+.selector_option,
+.selector_option_selected {
     cursor: pointer;
     padding: 8px 0;
     margin: 0 1rem;
@@ -72,4 +76,21 @@
 .selector_option_selected {
     color: white;
     background: black;
+}
+
+.myInput {
+    margin: 1rem;
+    background: #ece9e9;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 40vw;
+    margin: 1rem 0;
+}
+
+.myInput input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: larger;
+    width: 100%;
 }

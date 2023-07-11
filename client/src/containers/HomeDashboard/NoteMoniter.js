@@ -1,34 +1,30 @@
 import NoteList from '../../components/NotesList';
 
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchNotes } from '../../apis/noteApi';
+
 import styles from './homeDashboard.module.css';
 
 const NoteMoniter = () => {
-    const arr = [
-        {
-            time : 1,
-            title : 'tgfdfgfd',
-        },
-        {
-            time : 2,
-            title : 'tgfdfgfd',
-        },
-        {
-            time : 3,
-            title : 'tgfdfgfd',
-        },
-    ]
+    const arr = useSelector((state) => state.note.data)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchNotes);
+    }, [dispatch])
 
     return (
-        <div className = {styles.dashboard_note}>
-            <div className = {styles.dashboard_note_title}>
+        <div className={styles.dashboard_block}>
+            <div className={styles.dashboard_block_title}>
                 Note
             </div>
-            <div className = {styles.dashboard_note_body}>
-                <div className = {styles.dashboard_note_count}>
+            <div className={styles.dashboard_note_body}>
+                <div className={styles.dashboard_note_count}>
                     {arr.length}
                 </div>
-                <div className = {styles.dashboard_note_contaner}>
-                    <NoteList notes = {arr}/>
+                <div className={styles.dashboard_note_contaner}>
+                    <NoteList notes={arr} />
                 </div>
             </div>
         </div>

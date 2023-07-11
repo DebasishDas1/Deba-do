@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <div className={styles.page_contaner} >
-            <div className = {styles.about_page} >
+            <div className={styles.about_page} >
                 <h1>Deba do</h1>
                 version : 1.0
                 <img src={logo} alt="app logo" />
@@ -16,4 +16,4 @@ const About = () => {
     )
 };
 
-export default About ;
+export default About;

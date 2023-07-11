@@ -3,9 +3,11 @@ import styles from './pages.module.css';
 const Trash = () => {
     return (
         <div className={styles.page_contaner} >
-            Trash
+            <div className={styles.page_title}>
+                Trash
+            </div>
         </div>
     )
 };
 
-export default Trash ;
+export default Trash;

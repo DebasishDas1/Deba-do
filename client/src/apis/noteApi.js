@@ -14,21 +14,21 @@ const fetchNotes = async () => {
 
 };
 
-const addNewNote = async ( notePaylode ) => {
-    const { time, title, content } = notePaylode;
+const addNewNote = async (notePaylode) => {
+    const { time, title, noteMessage } = notePaylode;
 
     const updatedData = {
         title,
-        message: content,
+        message: noteMessage,
         creater: 'Debasish',
         tags: ['work'],
-        selectedFile : '',
-        importanceCount : '2',
+        selectedFile: '',
+        importanceCount: '2',
         crtatedAt: time,
     }
 
     try {
-        const res = await axios.post(`${url}/note/addNote`, updatedData, {} );
+        const res = await axios.post(`${url}/note/addNote`, updatedData, {});
         console.log(res);
 
     } catch (error) {

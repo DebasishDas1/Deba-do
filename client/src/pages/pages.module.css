@@ -1,27 +1,23 @@
-.page_contaner
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page_contaner {
-    background: white; 
-    border-radius: 30px; 
-    box-shadow: 35px 35px 68px 0px rgba(217, 92, 243, 0.5), 
-                inset -6px -6px 16px 0px rgba(217, 92, 243, 0.6), 
-                inset 0px 11px 28px 0px rgb(255, 255, 255);
-}
-
-.page_contaner {
-    margin: 5vh 5rem;
-    padding: 2rem 1rem;
-}
-
+.page_contaner,
 .about_page {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.page_contaner {
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+.page_title {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+
+.about_page {
     flex-direction: column;
     height: 80vh;
 }

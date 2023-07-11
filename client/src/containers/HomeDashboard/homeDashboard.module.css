@@ -1,42 +1,33 @@
-.dashboard_contaner, .dashboard_item_contaner, .dashboard_note_title, .dashboard_note_body
-{
+.dashboard_contaner,
+.dashboard_block_title,
+.dashboard_note_body {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .dashboard_contaner {
-    margin: 0 2rem;
-    width: 100%;
-    flex-direction: column;
-}
-
-.dashboard_title {
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-}
-
-.dashboard_item_contaner {
+    justify-content: flex-start;
     background: #eadcee;
-    width: 85%;
-    padding: 2rem;
+    width: 80%;
+    padding: 3rem;
     border-radius: 10px;
 
     display: grid;
-    grid-template-columns: 20rem 20rem;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.dashboard_note {
-    background: white; 
-    border-radius: 20px; 
-    box-shadow: 35px 35px 68px 0px rgba(217, 92, 243, 0.5), 
-                inset -6px -6px 16px 0px rgba(217, 92, 243, 0.6), 
-                inset 0px 11px 28px 0px rgb(255, 255, 255);
+.dashboard_block {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 35px 35px 68px 0px rgba(217, 92, 243, 0.5),
+        inset -6px -6px 16px 0px rgba(217, 92, 243, 0.6),
+        inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
-.dashboard_note_title {
+.dashboard_block_title {
     font-size: x-large;
     font-weight: bolder;
     margin: 1rem 0;

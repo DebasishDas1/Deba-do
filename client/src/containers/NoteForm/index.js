@@ -9,8 +9,8 @@ import styles from './nodeForm.module.css';
 
 const Notes = () => {
     const dispatch = useDispatch();
-    const [ tage, setTage ] = useState(); 
-    const [ difficulty, setDifficulty ] = useState()
+    const [tage, setTage] = useState();
+    const [difficulty, setDifficulty] = useState()
 
     const tageList = ['Work', 'Exercise', 'Teams', 'Creativity', 'Fun'];
     const difficultyList = ['Trivial', 'Easy', 'Medium', 'Hard'];
@@ -27,7 +27,7 @@ const Notes = () => {
         const now = new Date().getTime()
         const { name, value } = event.target;
 
-        setNote( oldData => {
+        setNote(oldData => {
             return {
                 ...oldData,
                 [name]: value,
@@ -38,47 +38,47 @@ const Notes = () => {
         })
     }
 
-    const onSubmit = () => {        
-        dispatch( addNote( note ) );
+    const onSubmit = () => {
+        dispatch(addNote(note));
         setNote({ title: '', noteMessage: '' });
     }
 
     return (
-            <div className={styles.form_contaner} >
-                <input 
-                    type='text' 
-                    name= 'title'
-                    value ={note.title} 
-                    onChange = {updateNote}  
-                    placeholder = 'Write note title' 
-                />
+        <div className={styles.form_contaner} >
+            <input
+                type='text'
+                name='title'
+                value={note.title}
+                onChange={updateNote}
+                placeholder='Write note title'
+            />
 
-                <textarea 
-                    row='' 
-                    column='' 
-                    name= 'noteMessage'
-                    value ={note.content} 
-                    onChange = {updateNote} 
-                    placeholder= 'Write your note...' 
-                />
+            <textarea
+                row=''
+                column=''
+                name='noteMessage'
+                value={note.noteMessage}
+                onChange={updateNote}
+                placeholder='Write your note...'
+            />
 
-                <Selector 
-                    type='Difficulty'  
-                    option='Easy' 
-                    action = {setDifficulty}
-                    optionList={difficultyList} 
-                />
+            <Selector
+                type='Difficulty'
+                option='Easy'
+                action={setDifficulty}
+                optionList={difficultyList}
+            />
 
-                <Selector 
-                    type='Tage'  
-                    option='Fun' 
-                    action = {setTage}
-                    optionList={tageList} 
-                />
+            <Selector
+                type='Tage'
+                option='Fun'
+                action={setTage}
+                optionList={tageList}
+            />
 
-                <AddNoteButton addNoteHandler = {onSubmit}/>
-            </div>
+            <AddNoteButton addNoteHandler={onSubmit} />
+        </div>
     )
 };
- 
-export default Notes ;
+
+export default Notes;
